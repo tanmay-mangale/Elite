@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.logo{
+   font-size: 20px;
+   font-weight: 700;
+   
+}
+
+.logo a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.navbar ul li{
+    font-size: 20px;
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    padding: 10px;
+    position: relative;
+    left: 20px;
+    padding: 5px 12px 5px 15px;
+}
+
+i{
+    color: white;
+position: relative;
+right: 8px;
+bottom: 1px;
+}
+
+.navbar ul .menu{
+ display: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color:white;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+   
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+
+.content h1{
+    font-size: 70px;
+    margin-top: 60px;
+}
+
+.content p{
+    margin: 10px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 29px;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0px;
+    text-align: center;
+    border-radius: 30px;
+    font-weight: 600;
+    border: 2px solid #009688;
+    font-size: 20px;
+    margin-top: 8px;
+    background:transparent;
+    color: white;
+    cursor: pointer;   
+}
+
+button:hover{
+    background-color: #009688;
+}
+
+/* second-landing page0 */
+
+.sec-window{
+    height: 100vh;
+    display: flex;
+}
+
+.left{
+    height: 100%;
+    width: 50%;
+    margin: 6vw 6vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.left h1{
+    font-size: 4vw;
+    line-height: 1;
+}
+
+.left p{
+    font-size: 3vw;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.left span{
+    font-size: 40px;
+    font-weight: 700;
+    color:crimson;    
+}
+
+.right{
+    height:100%;
+    width: 50%;
+}
+
+.right img{
+    height: 90%;
+    position: relative;
+    left: 100px;
+    top: 126px;
+}
+
+hr{
+    height: 60px;
+    background-color:#eead1f;
+    border: none;
+}
+
+/* box */
+
+.container{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 70px;
+}
+
+.box{
+    height: 80%;
+    width: 24%;
+    border-radius: 20px;
+}
+
+.box1{
+    background-image: url(images/rm347-porpla-02-a-01.jpg);
+    background-size: cover;
+}
+
+.box2{
+    background-image: url(images/16133993_5719387.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box3{
+    background-image: url(images/sport.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container a{
+    text-decoration:none;
+    color: black;
+}
+
+.container h1{
+ text-align: center;
+ padding-top: 130px;
+ padding-bottom: 50px;
+ font-size: 50px;
+}
+
+/* footer */
+
+footer{
+    height: 50vh;
+    width: 100%;
+    background-color:#212121;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.icon-footer{
+    font-size: 30px;
+}
+
+footer .icon-footer i{
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+@media (max-width:680px) {
+    /* land page  */
+    .navbar ul .head{
+       display: none;
+    }
+
+    .navbar ul .menu{
+        display: flex;
+    }
+
+    .content h1{
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .content p{
+        line-height: 1.5;
+    }
+
+    /* second landing page */
+    
+    .sec-window{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vw;
+    }
+
+    .left{
+        width: 100%;
+        padding-top: 60px;
+    }
+
+    .left h1{
+        font-size: 35px;
+    }
+
+    .left p{
+        font-size: 20px;
+    }
+
+    .left span{
+        font-size: 35px;
+        font-weight: 900;
+    }
+
+    .right{
+        width: 100%;
+    }
+
+    hr{
+    display: none;
+    }
+
+    .right img{
+     display: none;
+    }
+
+    /* box */
+    
+    .container{
+        height: 150vh;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .box{
+        width: 85%;
+        height: 90%;
+        border-radius: 10;
+    }
+
+    .box1{
+        margin-left: 0px;
+    }
+
+    .box3{
+        margin-bottom: 20px;
+    }
+
+    .container h1{
+         position: relative;
+        top: 10px; 
+        padding-bottom:150px;
+    }
+}
+

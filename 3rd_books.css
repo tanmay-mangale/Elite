@@ -1,0 +1,58 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.book-cont{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    background-color: #f1f2f4;
+}
+
+.box{
+    height: 45%;
+    width: 15%;
+}
+
+.box1{
+    background-image: url(images/3rdbookmar.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.box2{
+    background-image: url(images/3rdbookeng.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.book{
+    height: 10vh;
+    width: 100%;
+    background-color: #212121;
+}
+
+h1{
+    display:flex ;
+    justify-content: center;
+    position: relative;
+    top: 20%;
+    color: white;
+}
+
+@media (max-width:680px) {
+    .book-cont{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box{
+        height: 35%;
+        width: 50%;
+    }
+}
